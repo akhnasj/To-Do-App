@@ -1,0 +1,22 @@
+# Build results
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+
+# Visual Studio folders
+.vs/
+*.log
+*.cache
+
+# VS Code
+.vscode/
+
+# Backup files
+*.Designer.cs~
+*.csproj.user
+
+# Others
+TestResults/
