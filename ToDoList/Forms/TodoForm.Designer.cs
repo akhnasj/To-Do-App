@@ -32,8 +32,9 @@
             titleText = new TextBox();
             addTaskButton = new Button();
             dgvShowTask = new DataGridView();
-            saveButton = new Button();
-            deleteButton = new Button();
+            titleLabel = new Label();
+            duedateLabel = new Label();
+            dateDatePicker = new DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)dgvShowTask).BeginInit();
             SuspendLayout();
             // 
@@ -50,7 +51,7 @@
             // titleText
             // 
             titleText.BorderStyle = BorderStyle.FixedSingle;
-            titleText.Location = new Point(38, 82);
+            titleText.Location = new Point(68, 76);
             titleText.Multiline = true;
             titleText.Name = "titleText";
             titleText.Size = new Size(351, 44);
@@ -58,7 +59,7 @@
             // 
             // addTaskButton
             // 
-            addTaskButton.Location = new Point(160, 147);
+            addTaskButton.Location = new Point(723, 72);
             addTaskButton.Name = "addTaskButton";
             addTaskButton.Size = new Size(112, 51);
             addTaskButton.TabIndex = 3;
@@ -70,39 +71,45 @@
             // 
             dgvShowTask.AllowUserToAddRows = false;
             dgvShowTask.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvShowTask.Location = new Point(422, 82);
+            dgvShowTask.Location = new Point(90, 140);
             dgvShowTask.Name = "dgvShowTask";
             dgvShowTask.RowHeadersWidth = 62;
-            dgvShowTask.Size = new Size(402, 348);
+            dgvShowTask.Size = new Size(665, 342);
             dgvShowTask.TabIndex = 4;
             // 
-            // saveButton
+            // titleLabel
             // 
-            saveButton.Location = new Point(160, 283);
-            saveButton.Name = "saveButton";
-            saveButton.Size = new Size(112, 51);
-            saveButton.TabIndex = 5;
-            saveButton.Text = "Save";
-            saveButton.UseVisualStyleBackColor = true;
-            saveButton.Click += saveButton_Click;
+            titleLabel.AutoSize = true;
+            titleLabel.Location = new Point(9, 85);
+            titleLabel.Name = "titleLabel";
+            titleLabel.Size = new Size(53, 25);
+            titleLabel.TabIndex = 6;
+            titleLabel.Text = "Title :";
             // 
-            // deleteButton
+            // duedateLabel
             // 
-            deleteButton.Location = new Point(160, 352);
-            deleteButton.Name = "deleteButton";
-            deleteButton.Size = new Size(112, 51);
-            deleteButton.TabIndex = 6;
-            deleteButton.Text = "Delete";
-            deleteButton.UseVisualStyleBackColor = true;
-            deleteButton.Click += deleteButton_Click;
+            duedateLabel.AutoSize = true;
+            duedateLabel.Location = new Point(425, 85);
+            duedateLabel.Name = "duedateLabel";
+            duedateLabel.Size = new Size(95, 25);
+            duedateLabel.TabIndex = 7;
+            duedateLabel.Text = "Due Date :";
+            // 
+            // dateDatePicker
+            // 
+            dateDatePicker.Location = new Point(515, 85);
+            dateDatePicker.Name = "dateDatePicker";
+            dateDatePicker.Size = new Size(192, 31);
+            dateDatePicker.TabIndex = 8;
             // 
             // TodoApp
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(857, 510);
-            Controls.Add(deleteButton);
-            Controls.Add(saveButton);
+            Controls.Add(dateDatePicker);
+            Controls.Add(duedateLabel);
+            Controls.Add(titleLabel);
             Controls.Add(dgvShowTask);
             Controls.Add(addTaskButton);
             Controls.Add(titleText);
@@ -121,7 +128,8 @@
         private TextBox titleText;
         private Button addTaskButton;
         private DataGridView dgvShowTask;
-        private Button saveButton;
-        private Button deleteButton;
+        private Label titleLabel;
+        private Label duedateLabel;
+        private DateTimePicker dateDatePicker;
     }
 }

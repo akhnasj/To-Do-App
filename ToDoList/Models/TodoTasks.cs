@@ -10,6 +10,8 @@ namespace ToDoList.Models
     {
         public int Id { get; set; }
         public required string Title { get; set; }
+        public DateTime dueDate { get; set; } 
+
         public bool IsCompleted { get; set; }
     }
 }

@@ -1,9 +1,10 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
+using System.IO.Packaging;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
 using ToDoList.Models;
 
 namespace ToDoList.Data
@@ -20,3 +21,7 @@ namespace ToDoList.Data
         
     }
 }
+
+
+// Install - Package Microsoft.EntityFrameworkCore.Tools
+// Install-Package Npgsql.EntityFrameworkCore.PostgreSQL 
